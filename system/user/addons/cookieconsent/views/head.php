@@ -4,19 +4,30 @@
 <script src='https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js'></script>
 <script>
     $(document).ready(function() {
-        if (window.history.replaceState) {
-            window.history.replaceState(null, null, window.location.href);
-        }
         if (Cookies.get('cc_status') === undefined) {
-            Cookies.set('cc_status', 'unset')
+            Cookies.set('cc_status', 'unset');
         }
         if (Cookies.get('cc_status') === 'unset') {
             $('.cc-dialog').removeClass('hidden');
-        } else {
-            $('.cc-dialog').addClass('hidden');
+            Cookies.set('cc-click', '0');
         }
     })
 </script>
 <?php if (isset($gtag)) {
     echo $gtag;
 } ?>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('#cookieConsentForm').ajaxForm({
+        dataType: 'json',
+        success: function(data) {
+          if (data.success) {
+            console.log(data.success);
+          } else {
+            console.log('Failed with the following errors: '+data.errors.join(', '));
+          }
+        }
+      });
+    });
+</script>

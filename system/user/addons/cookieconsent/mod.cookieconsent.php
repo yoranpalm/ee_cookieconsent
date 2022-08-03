@@ -6,8 +6,8 @@
  * @package     ExpressionEngine
  * @category    Module
  * @author      Yoran Palm <contact@yoranpalm.nl>
- * @copyright   Copyright (c) 2020 Yoran Palm
- * @link        https://github.com/yoranpalm/ee-cookieconsent
+ * @copyright   Copyright (c) 2022 Yoran Palm
+ * @link        https://github.com/yoranpalm/ee_cookieconsent
  */
 
 use YoranPalm\Cookieconsent\Services\ModuleService;
@@ -23,6 +23,8 @@ class Cookieconsent
   {
     /* Needful model classes */
     ee()->load->model('Cookieconsent_model', 'cookieConsentModel');
+
+    ee()->lang->loadfile('cookieconsent');
   }
 
   /**
@@ -81,8 +83,16 @@ class Cookieconsent
   {
     $settings = ee()->cookieConsentModel->getGeneralSettings();
 
+    $lang = array(
+      'view_cookiepolicy' => lang('view_cookiepolicy'),
+      'button_save' => lang('button_save'),
+      'button_preferences' => lang('button_preferences'),
+      'button_accept' => lang('button_accept')
+    );
+
     $banner_vars = [
       'settings' => $settings,
+      'lang' => $lang
     ];
 
     $banner = ee('View')->make('cookieconsent:banner')->render($banner_vars);

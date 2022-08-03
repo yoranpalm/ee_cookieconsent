@@ -5,9 +5,9 @@ if (!defined('COOKIECONSENT_NAME')) {
 	define('COOKIECONSENT_AUTHOR_URL', 'https://yoranpalm.nl');
 	define('COOKIECONSENT_NAME', 'Cookie Consent');
 	define('COOKIECONSENT_DESCRIPTION', 'Displays a cookie consent banner');
-	define('COOKIECONSENT_VERSION', '1.0.0');
+	define('COOKIECONSENT_VERSION', '2.0.0');
 	define('COOKIECONSENT_NAMESPACE', 'YoranPalm\CookieConsent');
-	define('COOKIECONSENT_DOCS_URL', 'https://github.com/yoranpalm/ee-cookieconsent');
+	define('COOKIECONSENT_DOCS_URL', 'https://github.com/yoranpalm/ee_cookieconsent');
 	define('COOKIECONSENT_CSS_PATH', '/themes/user/cookieconsent/cc-style-min.css');
 	define('COOKIECONSENT_JS_PATH', '/themes/user/cookieconsent/cc-script-min.js');
 }

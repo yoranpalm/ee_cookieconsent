@@ -18,10 +18,11 @@ $lang = array(
 
     //----------------------------------------
     'banner_title'                      => 'This website uses cookies',
-    'banner_text'                       => 'To give you a pleasant experience we use some cookies. Upon further use of the website, all cookies are placed automatically. You can change your preferences at any time.',
-    'button_save'                       => 'Save Preferences',
-    'button_preferences'                => 'Set Preferences',
-    'button_accept'                     => 'Accept everything',
+    'banner_text'                       => 'This website uses cookies and/or similar tracking technologies for functionality, statistics and target marketing in cooperation with third parties. You can change your preferences at any time.',
+    'button_save'                       => 'Save preferences',
+    'button_preferences'                => 'Set preferences',
+    'button_accept'                     => 'Accept all',
+    'view_cookiepolicy'                 => 'View our cookie policy',
 
     // Additional Key => Value pairs go here
 

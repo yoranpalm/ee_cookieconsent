@@ -8,8 +8,8 @@ require_once PATH_THIRD . 'cookieconsent/config.php';
  * @package     ExpressionEngine
  * @category    Module
  * @author      Yoran Palm <contact@yoranpalm.nl>
- * @copyright   Copyright (c) 2020 Yoran Palm
- * @link        https://github.com/yoranpalm/ee-cookieconsent
+ * @copyright   Copyright (c) 2022 Yoran Palm
+ * @link        https://github.com/yoranpalm/ee_cookieconsent
  */
 
 class Cookieconsent_mcp
